@@ -7,6 +7,15 @@ export const days = [
     'SATURDAY',
 ];
 
+export const short_days = [
+    'MON',
+    'TUE',
+    'WED',
+    'THU',
+    'FRI',
+    'SAT',
+];
+
 export const bounds = [
     { s : '09:00', f : '10:30' },
     { s : '10:40', f : '12:10' },
@@ -33,7 +42,7 @@ export function getBoundsForField()
 export function getBoundsForCells(group)
 {
     let result = [];
-    for(let d of days)
+    for(let d of short_days)
     {
         for(let t of bounds)
             result.push({ day : d,  time : t, group : group })
