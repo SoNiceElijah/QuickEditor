@@ -1,0 +1,17 @@
+.header {
+    height: 39px;
+    line-height: 39px;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.header span {
+    font-weight: 600;
+}
+
+.the-most-big-one {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
