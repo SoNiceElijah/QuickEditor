@@ -42,10 +42,30 @@ export function getBoundsForField()
 export function getBoundsForCells(group)
 {
     let result = [];
+    let j = 0;
     for(let d of short_days)
     {
+        let i = 0;
         for(let t of bounds)
-            result.push({ day : d,  time : t, group : group })
+        {
+            result.push({
+                idx : j * bounds.length + i,
+                d_num : j,
+                size : bounds.length,
+                t_num : i, 
+                day : d,  
+                time : t, 
+                group : group, 
+                ctx : [
+                    { n : '', t : '', r : '' },
+                    { n : '', t : '', r : '' },
+                    { n : '', t : '', r : '' },
+                    { n : '', t : '', r : '' }
+                ]
+            });
+            ++i;
+        }
+        ++j;
     }
 
     return result;

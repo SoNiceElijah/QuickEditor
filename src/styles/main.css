@@ -1,0 +1,169 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 60px;
+    background: #e6e8e9;
+    box-shadow: 1px 0 3px 0px rgba(0, 0, 0, 0.2);
+    
+    z-index: 10;
+}
+
+.header-btn {
+    height: 60px;
+
+    content: "";
+    background-size: 70%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    background-color: #e6e8e9;
+
+    transition: 0.1s;
+}
+
+.header-btn:hover {
+    background-color: #d4d4d4;
+  
+}
+
+#logobtn {
+    background-image: url(/logo.png);
+}
+
+#exitbtn {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+
+    bottom: 0;
+}
+
+.main-content {
+    position: fixed;
+    top: 0;
+    left: 60px;
+    bottom: 0;
+    right: 0;
+
+    z-index: 9;
+
+    background: #f3f3f3;
+}
+
+h1 {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #d4d4d4;
+    font-weight: 300;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.lr-input {
+    padding: 0 20px 0 10px;
+    border-left: 10px solid #5e9de4;
+}
+
+.lr-input input {
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 8px;
+    background: transparent;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    outline: none;
+
+
+}
+
+.lr-tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ls-tags-item {
+    margin: 10px 10px 0 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+}
+
+.tag-new {
+    margin: 10px 10px 0 0;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+
+    border: 1px solid #116618;
+    color: #116618;
+    border-radius: 5px;
+
+    font-weight: 600;
+
+    width: 30px;
+
+    cursor: pointer;
+
+}
+.tag-new:hover {
+    border: 1px solid #116618;
+    background: #116618;
+
+    color: #ffffff;
+}
+
+.lr-records {
+    padding: 20px 0 20px 0;
+}
+
+.ls-records-item {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 10px;
+
+    background: #dddddd;
+    border: 1px solid #7e7e7e;
+    margin-top: -1px;
+}
+
+.rc-lec, .rc-prc,.rc-lab {
+    flex: 1;
+    text-align: center;
+}
+
+.rc-name {
+    flex: 10;
+    text-align: left;
+}
+
+.record-new {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    border: 1px solid #116618;
+    color: #116618;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.record-new:hover {
+    border: 1px solid #116618;
+    background: #116618;
+
+    color: #ffffff;
+}
