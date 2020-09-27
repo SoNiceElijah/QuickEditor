@@ -53,13 +53,12 @@
 
     z-index: 9;
 
-    background: #f3f3f3;
+    background: #ffffff;
 }
 
 h1 {
     margin: 10px 0 10px 0;
-    border-bottom: 1px solid #d4d4d4;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .padding {
@@ -67,23 +66,21 @@ h1 {
 }
 
 .lr-input {
-    padding: 0 20px 0 10px;
-    border-left: 10px solid #5e9de4;
+
 }
 
 .lr-input input {
     border: none;
-    border-bottom: 1px solid #d4d4d4;
-    padding-bottom: 8px;
-    background: transparent;
-    font-size: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 8px 20px 10px 20px;
+    font-size: 18px;
+    width: 500px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 
     outline: none;
-
-
 }
 
 .lr-tags {
@@ -93,37 +90,44 @@ h1 {
 
 .ls-tags-item {
     margin: 10px 10px 0 0;
-    padding: 5px;
+    padding: 8px 10px 5px 10px;
     border-radius: 5px;
-    border: 1px solid #cdcdcd;
+    color: #ffffff;
+    background: #4187d8;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .tag-new {
     margin: 10px 10px 0 0;
     display: inline-block;
-    line-height: 30px;
-    text-align: center;
-
-    border: 1px solid #116618;
-    color: #116618;
-    border-radius: 5px;
-
-    font-weight: 600;
-
-    width: 30px;
-
-    cursor: pointer;
 
 }
-.tag-new:hover {
-    border: 1px solid #116618;
-    background: #116618;
 
-    color: #ffffff;
+.lr-records-head {
+    display: flex;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #cdcdcd;
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.tag-new input {
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 8px 15px 10px 15px;
+    font-size: 12px;
+    width: 70px;
+    font-family: 'Nunito', sans-serif;
+
+    outline: none;
 }
 
 .lr-records {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .ls-records-item {
@@ -132,38 +136,163 @@ h1 {
     justify-content: space-between;
     padding: 10px;
 
-    background: #dddddd;
-    border: 1px solid #7e7e7e;
-    margin-top: -1px;
+    cursor: pointer;
+
+    transition: 0.1s;
+
+    background: #ebebeb;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.ls-records-item:hover {
+    background: #e2e2e2;
+}
+
+.rc-lec, .rc-prc,.rc-lab, .rc-tag {
+    flex: 1;
+    text-align: left;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+
+    min-width: 50px;
 }
 
 .rc-lec, .rc-prc,.rc-lab {
-    flex: 1;
     text-align: center;
 }
 
+.lesson-panel-desc {
+    padding-bottom: 20px;
+}
+
+.rc-tag {
+    font-weight: 700;
+}
+
 .rc-name {
-    flex: 10;
+    flex: 20;
     text-align: left;
+    padding: 0 0 0 20px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.rc-stat {
+    flex: 4;
+    overflow: hidden;
+    min-width: 150px;
+}
+
+.lesson-rule {
+    padding-left: 20px;
+    border-left: 1px solid #c4c4c4;
+    margin-left: 40px;
+
+    position: relative;
 }
 
 .record-new {
+
+    text-transform: lowercase;
+
     display: inline-block;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 6px 15px 8px 15px;
+    border-radius: 3px;
     margin-top: 20px;
 
-    border: 1px solid #116618;
-    color: #116618;
+    font-size: 14px;
+
+    background: #4187d8;
+    color: #ffffff;
 
     font-weight: 600;
 
     cursor: pointer;
+
+    transition: 0.1s;
 }
 
 .record-new:hover {
-    border: 1px solid #116618;
-    background: #116618;
+
+    background: #32649e;
 
     color: #ffffff;
+}
+
+.rc-progress {
+    width: 150px;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    margin-top: 5px;
+
+    display: flex;
+}
+
+.rc-p-s {
+    background: #80d3a0;
+}
+
+.rc-p-p {
+    background: #49a16b;
+}
+
+.rc-p-l {
+    background: #1e4e31;
+}
+
+.lr-controls {
+    position: absolute;
+    left: -40px;
+    height: 100%;
+}
+
+.lr-c-btn {
+    width: 30px;
+    height: 30px;
+
+    background: #ebebeb;
+    border-radius: 15px;
+
+    cursor: pointer;
+    user-select: none;
+
+    text-align: center;
+    line-height: 30px;
+
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    transition: 0.1s;
+}
+
+.lr-c-btn:hover {
+    background: #cfcfcf;
+}
+
+.btn-red:hover {
+    background: #da5e5e;
+    color: #ffffff;
+}
+
+.btn-blue {
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.btn-blue:hover {
+    background: #4187d8;
+    color: #ffffff;
+}
+
+.btn-bottom {
+    position: absolute;
+    bottom: -5px;
 }

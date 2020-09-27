@@ -3,9 +3,9 @@ export function getRules() {
         title : "test rule #1",
         tags : ["381703-2","381712"],
         lessons : [
-            { name : "safas" },
-            { name : "safas" },
-            { name : "safas" }
+            { tag : "АиГ", name : "Алгебра и геомтерия", l : 4, p : 10, s : 10},
+            { tag : "МА", name : "Математический анализ", l : 0, p : 5, s : 2 },
+            { tag : "ЯиМП", name : "Языки и методы программирования", l : 6, p : 2, s : 8 }
         ]
     }];
 }
